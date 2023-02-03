@@ -1,0 +1,201 @@
+.card {
+    box-shadow: 1px 1px 8px 1px rgba(170, 170, 170, 0.8);
+    border-radius: 10px;
+    margin-bottom: 35px;
+}
+
+.contactTitle {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.phoneNo {
+    color: black;
+}
+
+.phoneNo:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.product-card {
+    box-shadow: 0px 1px 5px 2px rgb(186, 186, 186);
+    border-radius: 4px;
+    padding: 10px;
+    min-height: 355px;
+}
+
+.title {
+    display: block;
+    height: 50px;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+}
+
+.category-name {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/* left navbar */
+
+.my-modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 999;
+    /* Sit on top */
+    padding-top: 5%;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.34);
+    /* Black w/ opacity */
+}
+
+.modal--content {
+    position: relative;
+    background-color: #fefefe;
+    border: 1px solid #d62525;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 100%;
+    border: none;
+    background-color: rgba(0, 28, 85, 0.89);
+    max-width: 300px;
+}
+
+.modal--show {
+    animation-name: animateToRight;
+    animation-duration: 1s
+}
+
+.modal--hide {
+    animation-name: animateToLeft;
+    animation-duration: 1s
+}
+
+
+/* Add Animation */
+
+@keyframes animateToRight {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animateToLeft {
+    from {
+        left: 0;
+        opacity: 1;
+    }
+    to {
+        left: -300px;
+        opacity: 0;
+    }
+}
+
+
+/*-------------------------- Modal --------------------------*/
+
+.modal1 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 999;
+    /* Sit on top */
+    padding-top: 5%;
+    /* Location of the box */
+    left: 0;
+    top: 50;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal--content1 {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #e2dbff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: animatetop;
+    animation-duration: 1s
+}
+
+
+/* Add Animation */
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+
+/* The Close Button */
+
+.close1 {
+    color: rgb(184, 184, 184);
+    right: 40px;
+    top: 10px;
+    position: absolute;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close1:hover,
+.close1:focus {
+    color: #000;
+}
+
+.modal--header1 {
+    padding: 2px 16px;
+    background-color: rgb(91, 55, 189);
+    color: rgb(255, 255, 255);
+}
+
+.modal--body1 {
+    padding: 2px 16px;
+    background-color: #fefefe;
+}
+
+.modal-footer1 {
+    padding: 2px 16px;
+    background-color: #e6e6e6;
+    color: rgb(0, 0, 0);
+}
+
+
+/*-------------------------- Modal --------------------------*/
